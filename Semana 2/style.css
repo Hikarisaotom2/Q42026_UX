@@ -1,0 +1,28 @@
+/*
+    1) id
+    2) class 
+    3) etiqueta
+*/
+
+#titulo{
+    height: 15%;
+    width: 15%;
+    font-style: italic;
+    color: aqua;
+    background-color: beige;
+}
+
+.elementos{
+    font-style: italic;
+    font-weight: 900;
+}
+
+
+.nuevoEstilo{
+    font-style:normal;
+    font-weight: 100;
+}
+button{
+    border-radius: 50%;
+    font-weight: 200;
+}
