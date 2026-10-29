@@ -15,6 +15,7 @@
 .elementos{
     font-style: italic;
     font-weight: 900;
+    font-size:large;
 }
 
 
@@ -23,7 +24,7 @@
     font-weight: 100;
 }
 
-button{
+/* button{
     border-radius: 50%;
     font-weight: 200;
-}
+} */

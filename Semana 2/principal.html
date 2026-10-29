@@ -1,25 +1,55 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- 
     1)Inline 
     2) archivos externos x
     3) anidar dentro de HTML
 -->
 <HTML>
-    <head> 
-        <title> Hola mundo!</title>
-        <!-- 
+
+<head>
+    <title> Hola mundo!</title>
+    <!-- 
         cargar recursos vitales 
         -->
-        <link rel="stylesheet" href="style.css" />
-        
-        <style>
-            #interno {
-                background-color: black;
-            }
-        </style>
-    </head>
-    <body>
-        <button>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <style>
+        #interno {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-field p-8">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="form-text">
+            Ingrese su email 
+        </div>
+    </div>
+        <div class="form-field p-8">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+        <div class="form-text">
+            Ingrese su nombre
+        </div>
+    </div>
+        <div class="form-field p-8">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="********">
+        <div class="form-text">
+            ingrese su password 
+        </div>
+    </div>
+
+     <button type="button" class="btn-solid theme-primary">
+    Log in
+    </button>
+    <!-- <button>
             boton1 
         </button>
           <button>
@@ -31,15 +61,13 @@
         <div>
           <p id="titulo" style="background-color: black;font-size: large;">Hola</p>
           <button class="elementos nuevoEstilo" id="nuevoEstilo">click!</button>
-        </div>
-       
-    </body>
-    <footer>
-        <!-- 
+        </div> -->
+
+</body>
+<footer>
+    <!-- 
         cargar recursos utiles pero pesados... 
          -->
-    </footer>
+</footer>
+
 </html>
-
-
-
