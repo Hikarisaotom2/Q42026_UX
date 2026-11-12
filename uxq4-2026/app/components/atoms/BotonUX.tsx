@@ -2,8 +2,10 @@
 interface BotonUxParams {
     texto:string;
     tipo:number;
+    estilo?:string | undefined;
+    accion: ()=>void;
+   
 }
-
 
 
 // function BotonUX(params:BotonUxParams){
@@ -16,9 +18,9 @@ interface BotonUxParams {
 // }
 
 
-function BotonUX({texto}:BotonUxParams){
+function BotonUX({texto, estilo="bg-white text-black", accion}:BotonUxParams){
     return (
-        <button>
+        <button className={`m-8 p-6 rounded-xl ${estilo}`} onClick={accion} >
             {texto}
         </button>
 
