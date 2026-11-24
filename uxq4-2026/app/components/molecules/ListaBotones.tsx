@@ -14,15 +14,22 @@ function ListaBotones() {
 
     */
         // primer render 
+        // useEffect(accion,[dependencias]);
         useEffect(
             ()=>{
-                setLoading(true);
-                // fetch a la BD... 
-                //cargo la info 
-                //set lista
-                console.log("PRIMER RENDER ONLY!");
-                setLoading(false);
-            },[]);
+                console.log("primer render lista de botones");
+            },[]
+        );
+
+        useEffect(()=>{
+            console.log("render X");
+        });
+
+           useEffect(()=>{
+            
+            console.log("Render de cambio en la lista");
+        },[botones]);
+
 
     function revisarValor() {
         if (contrasena.length < 7) {
@@ -38,8 +45,8 @@ function ListaBotones() {
     
 
     function actualizarEstado(e) {
-        console.log(e);
-        console.log(e.target.value);
+        // console.log(e);
+        // console.log(e.target.value);
         setContrasena(e.target.value);
     }
 
